@@ -1,0 +1,130 @@
+body{
+    font-family: "Lato", sans-serif;
+    margin: 80px;
+    padding: 0px;
+    background: #F3F5FC;
+    align-items: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.conteiner{
+    margin: auto;
+    width: 960px;
+    height: 650px;
+    padding: 5px;
+    background: teal;
+}
+
+.logo{
+    background: brown;
+    /* display: inline; */
+    width: 100%;
+    float: left;
+}
+
+.img{
+    margin-top: 1%;
+    margin-left: 5% ;
+    float: inherit;
+}
+
+.title{
+    float: inherit;
+    margin-left: 15%;
+
+}
+
+.left{
+    float: left;
+    background: palevioletred;
+    width: 70%;
+    height: 70%;
+}
+
+#input{
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 80%;
+    color: #0A3871;
+    font-size: 20px;
+    border: none;
+    outline: none; 
+    /* en el input no aparece le border */
+    background: #F3F5FC;
+    text-align: center;
+}
+
+.right{
+    background: palegreen;
+    width: 30%;
+    float: right;
+    height: auto;
+}
+
+.giphy-embed{
+    margin-left: 6%;
+    margin-top: 10%;
+    width: 90%;
+    height: auto;
+}
+
+.output-messege1{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    line-height: 120%;
+}
+
+.output-messege2{
+    float: left;
+    margin-left:10%;
+    color: #0A3871;
+    width: 80%;
+    height: 30%;
+    border: none;
+    outline: none;
+    /* font-family: poppins; */
+    font-size: 16px;
+    /* font-weight: 400; */
+    text-align: center;
+    color: #0A3871;
+    font-size: 18px;
+    /* line-height: 150%; */
+}
+
+.left-button{
+    background: greenyellow;
+    width: 70%;
+    float: left;
+    height: auto;
+    border-radius: 24px;
+}
+
+#encriptar{
+    padding: 15px;
+    width: 30%;
+    height: 40%;
+    border: none;
+    border-radius: 24px;
+    margin-left: 10%;
+    background: #0A3871;
+    border-color: #0A3871;
+}
+
+#desencriptar{
+    padding: 15px;
+    width: 30%;
+    height: 40%;
+    border-radius: 24px;
+    margin-left: 10%;
+    background: #D8DFE8;
+    border-color: #0A3871;
+}

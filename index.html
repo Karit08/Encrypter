@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 👩🏽‍💻 Encrypter</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script
+      src="https://kit.fontawesome.com/4d63ed8f35.js"
+      crossorigin="anonymous"
+    ></script> -->
+</head>
+<body>
+    <main class="conteiner">
+        <div class="logo">
+            <img class="img" src="https://www.clasesdeperiodismo.com/wp-content/uploads/2017/01/computadora.gif" alt="CodingwithK" width="70px" height="48px">
+            <h1 class="title">Message Encrypter</h1>
+        </div>
+        <div class="left">
+            <input id="input" type="text" placeholder="Enter text here!">
+        </div>
+        <div class="right">
+            <img class="giphy-embed" src="https://www.kevells.com/assets/images/slider-3.gif" alt="encrypt">
+            <!-- <iframe id="imageR" src="https://giphy.com/embed/7ktwhqlnFaDAJ8AzIw" height="220px" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> -->
+            <h1 id="textR" class="output-messege1">No mesage was found</h1>
+            <textarea id="output" class="output-messege2"  name="name" cols="30" rows="10" placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea>
+        </div>
+        <div class="left-button">
+            <p>Capital letters, accents and numbers are not allowed</p>
+            <button id="encriptar" onclick="encrypt()">Encrypt</button>
+            <button id="desencriptar">Decrypt</button>
+        </div>
+    </main>
+    <script>
+    // 1. tomo el valor que se ingreso en el input
+    // 2. valido si no contiene numeros, mayusculas y caracteres especiales
+    // 3. mapeo el valor y le ingreso los caracteres a encripar
+    // 4. lo retorno y lo muestro en el texArea  
+        
+        // const notification = (text, img) => {
+        //     const imgAlert = document.createElement("img");
+        //     textAlert.textContent = "";
+        //     textAlert.classList.add("active");
+        //     setTimeout(() => {
+        //         textAlert.classList.remove("active");
+        //     }, 2600);
+        //     imgAlert.src = img;
+        //     imgAlert.classList.add("icon-head");
+        //     textAlert.textContent = text;
+        //     textAlert.appendChild(imgAlert);
+        // };
+        // inputText.focus();
+
+        const encrypt = () =>{
+                let text= document.getElementById("input").value; 
+                console.log(text);
+                const newText = [];
+                
+                const removeAccents= text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+                if( !(/[A-Z0-9]/g.test(text)) && removeAccents === text){
+                    for (let i = 0; i < text.length; i++) {
+                        if(text[i]=== 'a') newText.push('ai');
+                        else if(text[i]=== 'e') newText.push('enter');
+                        else if(text[i]=== 'i') newText.push('imes');
+                        else if(text[i]=== 'o') newText.push('ober');
+                        else if(text[i]=== 'u') newText.push('ufat');
+                        else newText.push(text[i]);
+                    };
+                        console.log(newText.join(''))
+                        // return newText.join('');
+                }else {
+                   return document.getElementById("input").style.display ="Capital letters, accents and numbers are not allowed"
+                };
+
+                // document.getElementById("imageR").style.display = none; // desaparece imagen 
+                // document.getElementById("textR").style.display = none; // desaparece text 
+                document.getElementById("output").innerHTML = newText.join(''); 
+                input.value = "";
+                // input.focus();
+        };
+        
+
+        const decrypt = () =>{
+        };
+        
+        
+        // if(textIngresado === textIngresado.toLowerCase() && ){
+
+        // }else{
+        //     return ;
+        // }
+
+    </script>
+</body>
+</html>
