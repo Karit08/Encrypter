@@ -2,8 +2,13 @@ body{
     font-family: "Lato", sans-serif;
     margin: 80px;
     padding: 0px;
-    background: #F3F5FC;
-    align-items: center;
+    background-image: url('./imagenes/dark.jpg'); 
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    /* background: #F3F5FC; */
+    /* align-items: center; */
+    /* background: #463f3a; */
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -14,11 +19,12 @@ body{
     width: 960px;
     height: 650px;
     padding: 5px;
-    background: teal;
+    background-color: rgba(51,61, 41, 0.9);
+    border-radius: 10px;
 }
 
 .logo{
-    background: brown;
+    /* background: brown; */
     /* display: inline; */
     width: 100%;
     float: left;
@@ -33,12 +39,12 @@ body{
 .title{
     float: inherit;
     margin-left: 15%;
-
+    color: white;
 }
 
 .left{
     float: left;
-    background: palevioletred;
+    /* background: palevioletred; */
     width: 70%;
     height: 70%;
 }
@@ -49,17 +55,19 @@ body{
     margin-top: 10%;
     width: 80%;
     height: 80%;
-    color: #0A3871;
+    color: white;
     font-size: 20px;
     border: none;
     outline: none; 
     /* en el input no aparece le border */
-    background: #F3F5FC;
+    background: rgba(51,61, 41);
+    border-radius: 10px;
     text-align: center;
 }
 
 .right{
-    background: palegreen;
+    background: rgba(51,61, 41);
+    border-radius: 10px;
     width: 30%;
     float: right;
     height: auto;
@@ -81,12 +89,15 @@ body{
     font-size: 24px;
     text-align: center;
     line-height: 120%;
+    color: white;
 }
 
 .output-messege2{
+    background: rgba(51,61, 41);
+    border-radius: 10px;
     float: left;
     margin-left:10%;
-    color: #0A3871;
+    color: white;
     width: 80%;
     height: 30%;
     border: none;
@@ -95,13 +106,25 @@ body{
     font-size: 16px;
     /* font-weight: 400; */
     text-align: center;
-    color: #0A3871;
     font-size: 18px;
     /* line-height: 150%; */
 }
 
+#copy{
+    margin-left: 33%;
+    /* margin-top: 90%; */
+    padding: 15px;
+    width: 30%;
+    height: 40%;
+    border: none;
+    border-radius: 24px;
+    background: rgba(88, 47, 14, .5);
+    display: none;
+    color: white;
+}
+
 .left-button{
-    background: greenyellow;
+    /* background: greenyellow; */
     width: 70%;
     float: left;
     height: auto;
@@ -115,8 +138,8 @@ body{
     border: none;
     border-radius: 24px;
     margin-left: 10%;
-    background: #0A3871;
-    border-color: #0A3871;
+    background: rgba(88, 47, 14, .5);
+    color: white;
 }
 
 #desencriptar{
@@ -125,6 +148,18 @@ body{
     height: 40%;
     border-radius: 24px;
     margin-left: 10%;
-    background: #D8DFE8;
-    border-color: #0A3871;
+    background: rgba(88, 47, 14, .5);
+    border: none;
+    color: white;
+}
+
+#clausula{
+    /* text-align: center; */
+    padding: 15px;
+    margin-left: 10%;
+}
+
+#copyright{
+    padding: 15px;
+    margin-left: 40%;
 }
